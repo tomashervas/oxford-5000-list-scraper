@@ -1,0 +1,11 @@
+/__pycache__/
+*.pyc
+*.pyo
+*.so
+*.a
+*.class
+*.log
+*.out
+*.pyd
+geckodriver.log
+output.json
