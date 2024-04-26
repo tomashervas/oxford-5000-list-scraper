@@ -9,3 +9,4 @@
 *.pyd
 geckodriver.log
 output.json
+output.csv

@@ -1,9 +1,9 @@
 import json
 from ollama import generate
 
-def translate(word):
+def translate(word, type_word = None):
   prompt = f'''
-          Hola, puedes traducir la palabra "{word}", puedes contestar en formato JSON?
+          Hola, puedes traducir la palabra "{word}", es un "{type_word}", puedes contestar en formato JSON?
           {{
             "traduction":"traduccion de la palabra en castellano"
             "example":"una frase de ejemplo en ingles que la contenga"
@@ -15,5 +15,5 @@ def translate(word):
   data = json.loads(response_json)
   return data
 
-# hola = translate("hello")
-# print(hola)
+if __name__ == "__main__":
+  print(translate("bath", "noun"))
